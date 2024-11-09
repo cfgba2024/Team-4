@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundación Huésped</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.jpg" alt="Fundación Huésped Logo">
+    </div>
+    <div class="donation-banner">
+      <p>Te necesitamos más que nunca, ayúdanos con tu donación</p>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">Institucional</a></li>
+      <li><a href="#">Qué hacemos</a></li>
+      <li><a href="#">Cómo nos financiamos</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="#">Información</a></li>
+      <li><a href="#">Materiales</a></li>
+      <li><a href="#">Noticias</a></li>
+      <li><a href="#" id="login-button">Login</a></li>
+    </ul>
+  </nav>
+
+  <section class="content">
+    <div class="section">
+      <img src="info.jpg" alt="Busco Información">
+      <div class="overlay">BUSCO INFORMACIÓN</div>
+    </div>
+    <div class="section">
+      <img src="donate.jpg" alt="Súmate con tu donación">
+      <div class="overlay">SUMATE CON TU DONACIÓN</div>
+    </div>
+  </section>
+
+  <div class="login-modal" id="login-modal">
+    <div class="login-content">
+      <span class="close" id="close-login">&times;</span>
+      <h2>Iniciar Sesión</h2>
+      <form id="login-form">
+        <label for="username">Usuario:</label>
+        <input type="text" id="username" required>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+
