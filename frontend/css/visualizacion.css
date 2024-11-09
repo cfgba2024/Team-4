@@ -11,7 +11,7 @@ body {
   }
   
   .sidebar {
-    background-color: #1a1a1a;
+    background-color: #FF0131;
     padding: 20px;
     width: 250px;
   }
@@ -34,7 +34,7 @@ body {
   
   .main-content {
     flex: 1;
-    background-color: #121212;
+    background-color: antiquewhite;
     padding: 20px;
   }
   
@@ -45,6 +45,7 @@ body {
   }
   
   .header h1 {
+    color: #333;
     margin: 0;
     font-size: 24px;
   }
@@ -62,7 +63,7 @@ body {
   }
   
   .appointment {
-    background-color: #333;
+    background-color: #ffffff;
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 10px;
@@ -89,16 +90,7 @@ body {
     cursor: pointer;
     border-radius: 5px;
   }
-  
-  .accept {
-    background-color: #28a745;
-    color: white;
-  }
-  
-  .accept:hover {
-    background-color: #218838;
-  }
-  
+
   .decline {
     background-color: #dc3545;
     color: white;
@@ -107,4 +99,7 @@ body {
   .decline:hover {
     background-color: #c82333;
   }
-  
+  button {
+    color: #f4f4f4;
+    background-color: #FF0131;
+  }
