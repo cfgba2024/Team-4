@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Crear Turno{% endblock %}
+{% block content %}
+<h2>Crear Turno</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Guardar</button>
+</form>
+{% endblock %}

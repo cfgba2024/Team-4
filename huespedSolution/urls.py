@@ -14,9 +14,28 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+# proyecto/urls.py
+"""
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from huesped import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    #path('', include('huesped.urls')),  # Incluye las URLs de la app 'huesped'
+    
+    
+    path('', views.home, name='home'),  # Ruta para la página de inicio pública
+    #path('login/', views.login_view, name='login'),  # Ejemplo de ruta para iniciar sesión
+    # Otras rutas
+]"""
+from django.contrib import admin
+from django.urls import path
+from huesped import views  # Importamos las vistas de nuestra aplicación
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', views.login_view, name='login'),  # Ruta para la página de login
+    path('home/', views.home_view, name='home'),  # Ruta para la página de inicio
 ]
+

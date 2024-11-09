@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Médico - Home</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido al Sistema de Gestión de Atención al Paciente</h1>
+        <p>Gestiona turnos, consultas y deriva a los profesionales correspondientes en un solo lugar.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="{% url 'login' %}">Iniciar Sesión</a></li>
+            <li><a href="{% url 'registro' %}">Registro de Usuario</a></li>
+            <li><a href="{% url 'turno_list' %}">Ver Turnos</a></li>
+            <li><a href="{% url 'consulta_list' %}">Ver Consultas</a></li>
+            <!-- Agrega otras opciones de navegación según sea necesario -->
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Funcionalidades Principales</h2>
+        <ul>
+            <li>Gestión de Turnos para Pacientes</li>
+            <li>Derivación a Profesionales Especializados</li>
+            <li>Consulta y Seguimiento de Pacientes</li>
+            <li>Estadísticas y Métricas de Atención</li>
+        </ul>
+    </section>
+</body>
+</html>

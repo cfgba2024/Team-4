@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Métricas{% endblock %}
+{% block content %}
+<h2>Métricas de Atención</h2>
+<table>
+    <tr>
+        <th>Métrica</th>
+        <th>Valor</th>
+    </tr>
+    {% for metrica in metricas %}
+    <tr>
+        <td>{{ metrica.nombre }}</td>
+        <td>{{ metrica.valor }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

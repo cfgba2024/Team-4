@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}Detalle del Paciente{% endblock %}
+{% block content %}
+<h2>Detalle del Paciente</h2>
+<p>Nombre: {{ paciente.nombre }}</p>
+<p>Apellido: {{ paciente.apellido }}</p>
+<p>Historia Clínica: {{ paciente.historia_clinica }}</p>
+<a href="{% url 'agregar_nota' paciente.id %}">Agregar Nota</a>
+{% endblock %}
