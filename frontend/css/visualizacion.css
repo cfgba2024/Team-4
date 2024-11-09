@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #fff;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    background-color: #1a1a1a;
+    padding: 20px;
+    width: 250px;
+  }
+  
+  .sidebar h2 {
+    margin: 0;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .main-content {
+    flex: 1;
+    background-color: #121212;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .logout {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .appointments {
+    margin-top: 20px;
+  }
+  
+  .appointment {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .appointment h3 {
+    margin: 0 0 10px;
+  }
+  
+  .appointment p {
+    margin: 5px 0;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .actions button {
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .accept {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .accept:hover {
+    background-color: #218838;
+  }
+  
+  .decline {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .decline:hover {
+    background-color: #c82333;
+  }
+  
