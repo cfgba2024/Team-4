@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG - Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ONG: Salud y Derechos</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#programs">Programas</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><button onclick="openLoginModal()">Iniciar Sesión</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Por una comunicación ética en temas de salud y derechos sexuales</h2>
+        <p>Trabajamos para que el VIH/sida, las hepatitis virales, las enfermedades prevenibles y los derechos sexuales y reproductivos sean prioridad.</p>
+    </section>
+
+    <section id="about">
+        <h2>¿Quiénes Somos?</h2>
+        <p>Somos una ONG dedicada a asegurar que la información sobre salud y derechos se comunique de manera ética y responsable.</p>
+    </section>
+
+    <section id="programs">
+        <h2>Programas</h2>
+        <div class="program-card">
+            <h3>VIH/SIDA</h3>
+            <p>Educación y prevención sobre el VIH/SIDA.</p>
+        </div>
+        <div class="program-card">
+            <h3>Hepatitis Virales</h3>
+            <p>Concientización sobre la prevención de la hepatitis viral.</p>
+        </div>
+        <div class="program-card">
+            <h3>Enfermedades Prevenibles</h3>
+            <p>Información sobre la vacunación y prevención de enfermedades.</p>
+        </div>
+        <div class="program-card">
+            <h3>Derechos Sexuales y Reproductivos</h3>
+            <p>Promoción y defensa de los derechos sexuales y reproductivos.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 ONG Salud y Derechos</p>
+    </footer>
+
+    <!-- Modal de inicio de sesión -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLoginModal()">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form onsubmit="handleLogin(event)">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
